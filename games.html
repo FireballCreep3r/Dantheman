@@ -1,0 +1,60 @@
+
+<html>
+  <head>
+    <title>Games</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="click the link above if you're cool!">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAWklEQVQoU51RywoAIAjL///oYoeJzFZglyDds1iDEwPMImgLuJK1GYb6+BV3SgA6whjbox3apILeVM8iNEfN2RoeV662qKpFpN3qG8sgcJka6FaxU7JFPD/4AAXtGgxdEkgqAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="color:black">games can be found <a style="text-decoration:none; color:black" href="secretgame.html">here</a>
+    </h1>
+    <h2>Links: <a href="home.html">home</a>,
+      <a href="jobs.html">job application</a>
+    </h2>
+
+
+    <p>
+      look for the coolest games <b>here</b>
+    </p>
+    <div id="location1">
+      <button class="class" id="button1">Press me for money</button>
+    </div>
+    <br />
+    <div id="location2">
+
+    </div>
+
+
+    <script>
+      docement.getElementById("button1").addEventListener("mouseover", function(event){
+        var button = document.getElementById("button1");
+        location1 = document.getElementById("location1");
+        location1.removeChild(button);
+        var newButton = document.createElement("button2");
+        newButton.innerHTML = "<button class='class' id='button2'>Press me for money </button>";
+        location2 = document.getElementById("location2");
+        location2.appendChild(newButton);
+      });
+      docement.getElementById("button2").addEventListener("mouseover", function(event){
+        var button = document.getElementById("button2");
+        location1 = document.getElementById("location2");
+        location1.removeChild(button);
+        var newButton = document.createElement("button1");
+        newButton.innerHTML = "<button class='class' id='button1'>Press me for money </button>";
+        location2 = document.getElementById("location1");
+        location2.appendChild(newButton);
+      });
+      var button = document.getElementById("button");
+      button.addEventListener("click", function(event){
+
+        alert("you just won $0.00!!!");
+      });
+
+    </script>
+
+
+  </body>
+
+</html>

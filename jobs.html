@@ -1,0 +1,114 @@
+
+<html>
+  <head>
+    <title>Job application</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="click the link above if you're cool!">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAWklEQVQoU51RywoAIAjL///oYoeJzFZglyDds1iDEwPMImgLuJK1GYb6+BV3SgA6whjbox3apILeVM8iNEfN2RoeV662qKpFpN3qG8sgcJka6FaxU7JFPD/4AAXtGgxdEkgqAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="nav">
+      <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="games.html">games</a></li>
+        <li><a href="jobs.html">jobs</a></li>
+      </ul>
+
+    </div>
+    <div class="wrapper">
+      <div class="image-area">
+        <div class="image-text centered-container">Jobs</div>
+      </div>
+      <div class="intro-text centered-container">Do you want a job? No? Well lucky for you, we have a wide range of jobs available just for you!</div>
+    </div>
+
+
+
+    <br>
+
+    <h2 class="center">put your details here:</h2>
+    <form id="form">
+
+      <div>Name: <input type="text" /> </div>
+      <div>Age: <input type="number" /> </div>
+      <div>Email: <input type="text" /> </div>
+      <div>c̶r̶e̶d̶i̶t̶ c̶a̶r̶d̶ d̶e̶t̶a̶i̶l̶s̶: </div>
+      <div>a̶d̶d̶r̶e̶s̶s̶</div><br>
+
+      <div id="partselection" class="hide">Partner: (unlikely)<br>
+        <input type="checkbox" id="partcheckbox">type: <br>
+        <div id="partSelection">
+        <select>
+          <option value="lalala">imaginary</option>
+          <option value="lalala">ugly&fat</option>
+          <option value="lalala">stupid&lazy</option>
+          <option value="lalala">weird</option>
+        </select><br>
+      </div>
+      </div>
+      <p>please select one of the following: </p>
+      <select id="form2">
+        <option>i love being a discord mod</option>
+        <option selected>i've never touched grass</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" value="Save">
+
+      <h3 class="center" id="savetxt">Saved!</h3>
+
+    </form>
+
+    <script>
+      var form1 = document.getElementById("form");
+      var savetxt = document.getElementById("savetxt");
+      savetxt.style.display = "None";
+      form1.addEventListener("submit", function(event){
+        event.preventDefault();
+        var name = form1.elements[0];
+        var age = form1.elements[1];
+        var email = form1.elements[2];
+        var select2 = document.getElementById('form2');
+        var text = select2.options[select2.selectedIndex].text;
+        console.log(text);
+        console.log(name);
+        console.log(age);
+        console.log(email);
+        var savetxt = document.getElementById("savetxt");
+        savetxt.style.display = "Block";
+      });
+      var checkbox = document.getElementById("partcheckbox");
+      var selectionDiv = document.getElementById("partSelection");
+      selectionDiv.style.display = "None";
+      checkbox.addEventListener("change", function(event){
+        if (checkbox.checked == true){
+          selectionDiv.style.display = "None";
+        } else {
+          selectionDiv.style.display = "None";
+        }
+      });
+
+
+    </script>
+    <div class="center">
+      <h2>click this link to turn into a business man:</h2>
+
+      <button type="reset" onclick="location.href='jobapp.html'">
+        button of business
+      </button>
+    <div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+  </body>
+
+
+
+
+</html>

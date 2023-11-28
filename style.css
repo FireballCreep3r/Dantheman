@@ -1,0 +1,165 @@
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+.nav {
+  background-color: #001dad;
+  color: white;
+}
+
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 0px;
+}
+
+.nav ul li {
+  padding: 19px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  transition: background-color 0.2s;
+}
+
+.dog {
+  width: 242px;
+  height: 208px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEe3opkIjFiKaa_yeBBNmnnM8X2E56WPbIaEDoWNWGPhkOfS9o3vn43s8dBmchzHEp9HA&usqp=CAU") no-repeat;
+  display: inline-block;
+}
+.dog:hover {
+  width: 242px;
+  height: 208px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV5fdvzMmV7TcDLKzS80hCtqFDaLonBx51keumlQGwQkM07G2NQE_UlX5D753iKahPZI&usqp=CAU") no-repeat;
+}
+
+.nav ul li:hover {
+  background-color: #001685;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.image-area {
+  background-image: url("https://binaryfortressdownloads.com/Download/WPF/Images/983/WallpaperFusion-nyan-cat-in-space-1680x480.jpg");
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
+  ;
+}
+
+.centered-container {
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+.image-text {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 200px;
+
+}
+
+.intro-text {
+  color: grey;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+
+.single-service {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.single-service p {
+  padding: 0px 16px;
+}
+
+@media screen and (min-width: 700px) {
+  .nav ul {
+    text-align: right;
+  }
+
+  .nav ul li {
+    display: inline-block;
+    border-bottom: 0px;
+    border-left: 1px solid black;
+    text-align: left;
+  }
+
+  .single-service {
+    width: 50%;
+    float: left;
+  }
+
+  .image-area{
+    padding: -100px 16px;
+  }
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+form {
+  background-color: teal;
+  text-align: left;
+  border: thick solid black;
+  width:200px;
+  height: 400px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+
+
+}
+
+.hide {
+  display: None;
+}
+
+.alternative {
+  list-style:None;
+  background-color: grey;
+
+}
+
+
+
+
+
+
+
+
+.lalalalal {
+  font-size: 20px;
+}
